@@ -27,3 +27,23 @@ This can be seen in action in the image above which shows the Dentanoid API bein
 
 Swarm mode has a built-in **load balancer** which utilizes the round robin algorithm to evenly distribute the load across the nodes, this ensures optimal performance by potentially decreasing latency.
 
+## Steps to Deploy and Scale
+- Create the swarm on the manager host by using the following command
+
+```
+docker swarm init
+```
+- Then different hosts can be added to the swarm as worker nodes using the output of the first command (usually containing a unique token to that swarm)
+
+an example would be:
+```
+docker swarm join \
+  --token  SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c \
+  192.168.99.100:2377
+```
+
+- Finally the service can be started across the swarm (can be scaled to liking using **--replicas**)
+
+```
+docker service create --name API --replicas 6 -p 3000:3000 dentanoid-dentist:1.0
+```
