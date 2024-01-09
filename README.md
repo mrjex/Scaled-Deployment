@@ -13,7 +13,7 @@ Below are some perks that are achieved thanks to the nature of swarm mode
 
 ### Availabiity
 
-<img src="https://i.imgur.com/PijjK8q.png">
+<img src="https://i.imgur.com/PijjK8q.png" width="200px">
 
 Firstly, docker swarms allow for high availability by specifying the **--replicas** option, this option allows for spawning multiple instances of the same program  in the context of a single node, this means that losing a single instance of the service does not lead to downtime. \
 \
@@ -22,7 +22,8 @@ More importantly, swarm mode allows for node creation on **different host machin
 This can be seen in action in the image above which shows the Dentanoid API being scaled on a swarm consisting of a node on the left acting as the manager and the node on the right which is running on a seperate machine on the same network acting as a worker node.
 
 ### Performance
-<img src="https://media.discordapp.net/attachments/1011556085221556248/1193374170357186672/image.png" />
+<img src="https://www.cloud4u.com/upload/medialibrary/5a6/0_CCK15OF3DizmOITk.png">
+<img src="https://media.discordapp.net/attachments/1011556085221556248/1193374170357186672/image.png" width="220px" />
 
-Swarm mode has a built-in load balancer which utilizes the round robin algorithm to evenly distribute the load across the nodes, this ensures optimal performance by potentially decreasing latency.
+Swarm mode has a built-in **load balancer** which utilizes the round robin algorithm to evenly distribute the load across the nodes, this ensures optimal performance by potentially decreasing latency.
 
