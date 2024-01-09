@@ -2,7 +2,7 @@
 
 This repo attempts to address the concerns of availability and performance for the system concidering that there will be high demand on launch.
 
-The measures taken in the process of deployment are presented here.
+The measures taken in the process of deployment are presented in this repo.
 
 ## Docker Swarm Mode <img src="https://substack-post-media.s3.amazonaws.com/public/images/ea0bb372-1b18-4abe-acb5-456035630fb2_269x201.png" width="40px">
 
