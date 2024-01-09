@@ -54,5 +54,5 @@ The result is an evenly distributed swarm of containers serving the same purpose
 
 
 ## Deployment Diagram
-<img src="https://i.imgur.com/TiU5yZL.png" width="500px" />
+<img src="https://i.imgur.com/TiU5yZL.png" width="650px" />
 
