@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  backend:
+    build: ../server
+    environment:
+      - PORT=3000 
+    deploy:
+      replicas: 4
+
+  cadvisor:
+    container_name: cadvisor
+    image: gcr.io/cadvisor/cadvisor:latest
+    ports:
+      - "9200:8080"
+    volumes: 
+      - "/:/rootfs"
+      - "/var/run:/var/run"
+      - "/sys:/sys"
+      - "/var/lib/docker/:/var/lib/docker"
+      - "/dev/disk/:/dev/disk"
+    privileged: true
+    devices: 
+      - "/dev/kmsg"
+
+  prometheus:
+    image: prom/prometheus
+    container_name: my-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ../prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - DS_PROMETHEUS=prometheus
+    volumes: 
+      # - "grafana-data:/var/lib/grafana"
+      - "../grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
+      - "../grafana/dashboard.json:/var/lib/grafana/dashboards/dashboard.json"
+      - "../grafana/default.yaml:/etc/grafana/provisioning/dashboards/default.yaml"
+    privileged: true
+    depends_on:
+      - prometheus
