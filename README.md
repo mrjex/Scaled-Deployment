@@ -48,6 +48,8 @@ docker swarm join \
 docker service create --name API --replicas 6 -p 3000:3000 dentanoid-dentist:1.0
 ```
 
+Navigating to `http://<HOST_IP>:3000` will now lead to a response from different nodes depending on the load balancing.
+
 The result is an evenly distributed swarm of containers serving the same purpose
 
 <img src="https://i.imgur.com/PijjK8q.png" width="600px">
