@@ -1,2 +1,2 @@
 ## Important
-Clone the content of the API in this folder
+Clone the source of the API in this folder
