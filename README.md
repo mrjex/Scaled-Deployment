@@ -1,6 +1,6 @@
 # Dentanoid Deployment (Advanced)
 
-This repo attempts to address the concerns of availability and performance for the system concidering that there will be high demand on launch.
+This repo attempts to address the concerns of availability and performance in the distributed system especially concidering that there will be high demand on launch.
 
 The measures taken in the process of deployment are presented in this repo.
 
