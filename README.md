@@ -11,7 +11,7 @@ A Docker Swarm is a group of either physical or virtual machines that are runnin
 ## Perks
 Below are some perks that are achieved thanks to the nature of swarm mode
 
-### Availabiity
+### Availability
 
 <img src="https://i.imgur.com/PijjK8q.png" width="600px">
 
