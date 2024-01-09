@@ -52,3 +52,7 @@ The result is an evenly distributed swarm of containers serving the same purpose
 
 <img src="https://i.imgur.com/PijjK8q.png" width="600px">
 
+
+## Deployment Diagram
+<img src="https://i.imgur.com/TiU5yZL.png" />
+
