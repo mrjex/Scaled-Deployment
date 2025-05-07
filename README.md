@@ -1,6 +1,8 @@
-# Dentanoid Deployment (Advanced)
+# Dentanoid Deployment
 
-This repo attempts to address the concerns of availability and performance in the distributed system especially concidering that there will be high demand on launch.
+> ⚠️ **Disclaimer**: This is a **fork** of [Scaled Deployment](https://github.com/Dentanoid/Scaled-Deployment), originally created and maintained by the [Dentanoid Organization](https://github.com/Dentanoid)
+
+This repository attempts to address the concerns of availability and performance in the distributed system especially concidering that there will be high demand on launch.
 
 The measures taken in the process of deployment are presented in this repo.
 
