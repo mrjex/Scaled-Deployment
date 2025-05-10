@@ -1,5 +1,13 @@
 # Dentanoid Deployment
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white" alt="Prometheus" />
+  <img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white" alt="Grafana" />
+  <img src="https://img.shields.io/badge/cAdvisor-FF6F00?logo=google-cloud&logoColor=white" alt="cAdvisor" />
+</p>
+
 > ⚠️ **Disclaimer**: This is a **fork** of [Scaled Deployment](https://github.com/Dentanoid/Scaled-Deployment), originally created and maintained by the [Dentanoid Organization](https://github.com/Dentanoid)
 
 This repository attempts to address the concerns of availability and performance in the distributed system especially concidering that there will be high demand on launch.
